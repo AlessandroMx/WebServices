@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Services Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit-core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+    <script src="test.js"></script>
+</head>
+
+<body>
+    <div class="uk-container">
+        <h1 class="uk-text-center uk-margin-top uk-margin-bottom">Web Services Test</h1>
+    </div>
+    <div class="uk-container uk-margin-top">
+        <button class="uk-button uk-button-default uk-align-center uk-margin" id="button-json">Click to test!</button>
+        <div class="uk-alert-success uk-hidden" id="json-success" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>¡JSON was successfully received! Data from the object -> <span id="json-response"></span></p>
+        </div>
+        <div class="uk-alert-danger uk-hidden" id="json-fail" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>Error: JSON could not be sent.</p>
+        </div>
+    </div>
+</body>
+
+</html>
