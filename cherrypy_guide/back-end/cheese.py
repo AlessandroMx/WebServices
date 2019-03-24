@@ -58,7 +58,6 @@ class WebServices:
         """
         return data
 
-    # @cherrypy.tools.json_in()
     @cherrypy.tools.json_out()
     def POST(self, json_data):
         """POST method that expects to receive a JSON containing the data
