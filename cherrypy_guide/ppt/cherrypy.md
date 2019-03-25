@@ -1,4 +1,4 @@
-%title: CherryPy (Simple & Straightforward Guide)
+%title: CherryPy (The Simple Guide)
 %author: Ibrahim Chávez
 %date: 03-24-2019
 
@@ -9,7 +9,7 @@ I am Ibrahim Chávez and I will guide you on how to use CherryPy.
 # Who am I?
 
 * Engineering/Technology Intern at GEIQ (Mexico)
-* Member of the Services & Shops Analytics team
+* Member of the Services & Shop Analytics team
 * (Really) Enthusiastic Python Developer
 * Current project: Test Cell Advisor (TCA)
     * Web services
@@ -17,10 +17,33 @@ I am Ibrahim Chávez and I will guide you on how to use CherryPy.
 
 -------------------------------------------------
  
--> # What are the topics for the presentation? <-
+-> # What are the topics for this presentation? <-
 
 * CherryPy -> Python Micro Web Framework
 * Pickle   -> Module for [de-]serialization
+
+-------------------------------------------------
+ 
+-> # What is CherryPy? <-
+
+Pythonic, object-oriented web framework.
+
+# Wait... What does that mean?
+
+* What does object-oriented means?
+* What is a web framework?
+* So...
+
+------------------------------------------------- 
+ 
+-> # Why? <-
+
+* Fast development
+* Pythonic
+* Oldest web frameworks (10+ years old)
+* Lets you make the decisions
+* Clean
+* Small learning curve
 
 -------------------------------------------------
  
