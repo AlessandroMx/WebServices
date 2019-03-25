@@ -28,7 +28,9 @@ I am Ibrahim Chávez and I will guide you on how to use CherryPy.
 
 Pythonic, object-oriented web framework.
 
-# Wait... What does that mean?
+-------------------------------------------------
+
+-> # Wait... What does that mean? <-
 
 * What does object-oriented means?
 * What is a web framework?
