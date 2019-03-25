@@ -46,6 +46,8 @@ Pythonic, object-oriented web framework.
 * Lets you make the decisions
 * Clean
 * Small learning curve
+* Great community (https://gitter.im/cherrypy/cherrypy)
+* It's free!
 
 -------------------------------------------------
  
@@ -57,61 +59,23 @@ must works.
 
 -------------------------------------------------
  
--> # Example of nested list <-
+-> # Let's run your first web server <-
  
-This is an example of multi-level headers and a nested list.
+This example shows how to run a simple web server with CherryPy.
  
-# first-level title
- 
-second-level
-------------
- 
-- *item 1*
-    - sub-item 1
-        - sub-sub-item 1
-        - sub-sub-item 2
-        - sub-sub-item 3
-    - sub-item 2
- 
--------------------------------------------------
- 
--> # Example of code block formatting <-
- 
-This example shows how to format a code snippet.
- 
-    1  /* Hello World program */
+    1   # Hello World program
     2
-    3  #include <stdio.h>
+    3   import cherrypy
     4
-    5  int main()
-    6  {
-    7     printf("Hello World");
-    8     return 0;
-    9  }
- 
-This example shows inline code: `sudo reboot`
- 
+    5   class Foobar(object):
+    6       @cherrypy.expose
+    7       def index(self):
+    8           return 'Hello World!'
+    9
+    10  cherrypy.quickstart(Foobar())
+
 -------------------------------------------------
  
--> # Example of nested quotes <-
- 
-This is an example of nested quotes.
- 
-# three-level nested quotes
- 
-> This is the first-level quote.
->> This is the second-level quote
->> and continues.
->>> *This is the third-level quote, and so on.*
- 
--------------------------------------------------
- 
--> # Example of citations <-
- 
-This example shows how to place a citation inside a presentation.
- 
-This tutorial is published at [Xmodulo](http://xmodulo.com)
- 
-You are welcome to connect with me at [LinkedIn](http://www.linkedin.com/in/xmodulo)
- 
-Pretty cool, huh?
+# Pretty cool, huh?
+
+Lets jump into more interesting code...
