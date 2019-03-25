@@ -76,6 +76,6 @@ This example shows how to run a simple web server with CherryPy.
 
 -------------------------------------------------
  
-# Pretty cool, huh?
+-> # Pretty cool, huh? <-
 
 Lets jump into more interesting code...
