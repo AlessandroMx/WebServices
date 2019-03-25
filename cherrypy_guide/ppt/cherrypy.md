@@ -4,13 +4,16 @@
 
 -> # Hi everyone! <-
 
--> I am Ibrahim Chávez and I will guide you on how to use CherryPy. <-
+I am Ibrahim Chávez and I will guide you on how to use CherryPy.
 
 # Who am I?
 
 * Engineering/Technology Intern at GEIQ (Mexico)
 * Member of the Services & Shops Analytics team
 * (Really) Enthusiastic Python Developer
+* Current project: Test Cell Advisor (TCA)
+    * Web services
+    * General back-end development
 
 -------------------------------------------------
  
