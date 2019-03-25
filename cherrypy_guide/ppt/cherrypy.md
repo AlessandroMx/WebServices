@@ -49,6 +49,14 @@ Pythonic, object-oriented web framework.
 
 -------------------------------------------------
  
+-> # When you should use it? <-
+
+Whenever you want to build a web application in just a couple of minutes, 
+without losing reliability and with full control of how your application 
+must works.
+
+-------------------------------------------------
+ 
 -> # Example of nested list <-
  
 This is an example of multi-level headers and a nested list.
