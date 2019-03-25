@@ -17,6 +17,13 @@ I am Ibrahim Chávez and I will guide you on how to use CherryPy.
 
 -------------------------------------------------
  
+-> # What are the topics for the presentation? <-
+
+* CherryPy -> Python Micro Web Framework
+* Pickle   -> Module for [de-]serialization
+
+-------------------------------------------------
+ 
 -> # Example of nested list <-
  
 This is an example of multi-level headers and a nested list.
