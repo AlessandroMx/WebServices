@@ -13,18 +13,21 @@
     Mar 22 2019           Ibrahim C.         Original version
     ===========         =============        ================
 """
-
 import pandas as pd
 
-from IPython import embed
 
-def main_logic():
-    """Dummy function for processing some data
-    
+def sum_column(col_name):
+    """Pretty simple function that gets the sum of a DataFrame column
+
+    Parameters
+    ----------
+    col_name : str
+        The name of the DataFrame column to sum
+
+    Returns
+    -------
+    numpy.float64
+        The sum of the whole column
     """
-    embed()
-    pd.read_csv('../assets/FL_insurance_sample.csv')
-
-
-if __name__ == "__main__":
-    main_logic()
+    df = pd.read_csv('../assets/FL_insurance_sample.csv')
+    return df[col_name].sum()

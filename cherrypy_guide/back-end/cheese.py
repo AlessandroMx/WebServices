@@ -22,6 +22,8 @@
 import cherrypy
 import cherrypy_cors
 
+import lemon
+
 # Why do we need to import cherrypy_cors?
 # Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP
 # headers to tell a browser to let a web application running at one origin
@@ -44,7 +46,7 @@ def hello_world():
 class WebServices:
 
     @cherrypy.tools.accept(media='text/plain')
-    def GET(self, data='test'):
+    def GET(self, data='1st param', another_param='2nd param'):
         """GET method enabled by this method. It should receive a param call
         'data'.
         Parameters
@@ -56,7 +58,7 @@ class WebServices:
         str
             Same value as input
         """
-        return data
+        return f'{data} {another_param}'
 
     @cherrypy.tools.json_out()
     def POST(self, json_data):
@@ -64,14 +66,14 @@ class WebServices:
         for getting the desired action
         Parameters
         ----------
-        json_data : json
+        json_data : str
             JSON input.
         Returns
         -------
         json
             Returns the result for the given input
         """
-        return 'Really important data'
+        return lemon.sum_column(json_data)
 
 def web_services():
     """Configures how the web services should run
@@ -90,13 +92,12 @@ def web_services():
         }
     }
     # cherrypy.config.update({'server.socket_host': 'localhost'})
-    cherrypy.config.update({'server.socket_host': '3.51.55.92'})
+    # cherrypy.config.update({'server.socket_host': '3.51.55.92'})
+    cherrypy.config.update({'server.socket_host': '192.168.1.85'})
     cherrypy.config.update({'server.socket_port': 8086})
     cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
     cherrypy.quickstart(WebServices(), '/', conf)
 
 if __name__ == "__main__":
-    # Run a function here...  
     # hello_world()  
     web_services()
-    pass
